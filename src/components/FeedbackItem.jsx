@@ -5,7 +5,7 @@ import Card from "./shared/Card";
 function FeedbackItem({ item, handleDelete }) {
   return (
     <Card>
-      <div className="num-display">{item.rating}</div>
+      <div className="num-display flex ">{item.rating}</div>
       <button onClick={() => handleDelete(item.id)} className="close">
         <FaTimes color="red" />
       </button>
